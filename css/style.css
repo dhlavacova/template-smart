@@ -21,7 +21,7 @@ body{
 nav{
     height: 3.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
     margin-top: 4.5rem;
@@ -56,44 +56,57 @@ nav li a{
 }
 
 .haupt-container{
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .text{
-    width: 50rem; ;
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
+
 .picture{
-    width: 50vw;
-    height: 50vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50rem;
+    height: 50rem;
     }
 
-span{
-    position: absolute;
-}
-img{
-    position: relative;
-}
 .picture :last-child{
-    top:25%;
-    right: 40%;
+    position: absolute;
+ top:11%;
+
+
     z-index: 1;
 }
+.picture :first-child{
+    position: absolute;
+    top:10%;
+    right: -3%;
 
 
+}
 
 .buttons{
    display: flex;
     justify-content: center;
-    align-items: flex-end;
+
+    align-self: flex-end;
+    order: -1;
 }
 .buttons a{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 10rem;
     height: 2rem;
     color: var(--accent-color);
