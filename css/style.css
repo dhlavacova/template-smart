@@ -1,0 +1,111 @@
+:root{
+    --accent-color: #eee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/bg_001.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    color: var(--accent-color);
+    font-family: Helvetica, sans-serif;
+}
+
+nav{
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 4.5rem;
+}
+
+nav .logo img{
+    height: 3.5rem;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    height: 100%;/*kann ich klicken über all , ich muss nicht drücken nur an text*/
+    width: 6.5rem;/*macht abstand von sich selbst*/
+
+}
+
+nav li a{
+    color: var(--accent-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /*da pryc podtrzeni*/
+}
+
+.haupt-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 50rem; ;
+}
+.picture{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    }
+
+span{
+    position: absolute;
+}
+img{
+    position: relative;
+}
+.picture :last-child{
+    top:25%;
+    right: 40%;
+    z-index: 1;
+}
+
+
+
+.buttons{
+   display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    border:transparent;
+    border-radius: 3% ;
+    text-decoration: none;
+}
+.buttons :first-child{
+    background-color: #29bd56;
+}
+.buttons :last-child{
+    background-color: #3497da;
+}
+
