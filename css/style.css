@@ -1,24 +1,25 @@
-:root{
+:root {
     --accent-color: #eee;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     background-image: url("../img/bg_001.jpg");
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     background-size: cover;
     color: var(--accent-color);
     font-family: Helvetica, sans-serif;
 }
 
-nav{
+nav {
     height: 3.5rem;
     display: flex;
     justify-content: space-evenly;
@@ -27,11 +28,11 @@ nav{
     margin-top: 4.5rem;
 }
 
-nav .logo img{
+nav .logo img {
     height: 3.5rem;
 }
 
-nav ul{
+nav ul {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -39,13 +40,13 @@ nav ul{
     list-style: none;
 }
 
-nav ul li{
-    height: 100%;/*kann ich klicken über all , ich muss nicht drücken nur an text*/
-    width: 6.5rem;/*macht abstand von sich selbst*/
+nav ul li {
+    height: 100%; /*kann ich klicken über all , ich muss nicht drücken nur an text*/
+    width: 6.5rem; /*macht abstand von sich selbst*/
 
 }
 
-nav li a{
+nav li a {
     color: var(--accent-color);
     height: 100%;
     width: 100%;
@@ -55,7 +56,7 @@ nav li a{
     text-decoration: none; /*da pryc podtrzeni*/
 }
 
-.haupt-container{
+.haupt-container {
     height: 80vh;
     width: 80vw;
     display: flex;
@@ -63,47 +64,44 @@ nav li a{
     align-items: center;
 
 }
-.text{
+
+.text {
     height: 20rem;
     width: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+
+
 }
 
-.picture{
+.picture {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 50rem;
     height: 50rem;
-    }
+}
 
-.picture :last-child{
+.picture :last-child {
     position: absolute;
- top:11%;
-
-
+    top: 10px;
+    right: 20px;
     z-index: 1;
 }
-.picture :first-child{
+
+.picture :first-child {
     position: absolute;
-    top:10%;
-    right: -3%;
+    top:-5px;
+    left:550px;
 
 
 }
 
-.buttons{
-   display: flex;
-    justify-content: center;
+.buttons {
+    display: flex;
 
-    align-self: flex-end;
-    order: -1;
 }
-.buttons a{
+
+.buttons a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -111,14 +109,16 @@ nav li a{
     height: 2rem;
     color: var(--accent-color);
     font-weight: bold;
-    border:transparent;
-    border-radius: 3% ;
+    border: transparent;
+    border-radius: 3%;
     text-decoration: none;
 }
-.buttons :first-child{
+
+.buttons :first-child {
     background-color: #29bd56;
 }
-.buttons :last-child{
+
+.buttons :last-child {
     background-color: #3497da;
 }
 
